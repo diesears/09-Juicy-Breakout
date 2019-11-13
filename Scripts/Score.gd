@@ -1,8 +1,7 @@
 extends Label
 
-
 func _ready():
-	pass
+ update_score()
 
-func update_score(s):
-	text = 'Score: ' + str(s)
+func update_score():
+ text = "Score: " + str(get_parent().score)

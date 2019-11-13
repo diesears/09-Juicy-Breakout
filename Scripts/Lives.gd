@@ -1,7 +1,7 @@
 extends Label
 
 func _ready():
-	pass
+ update_lives()
 
-func update_lives(l):
-	text = "Lives: " + str(l)
+func update_lives():
+ text = "Lives: " + str(get_parent().lives)
